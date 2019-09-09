@@ -29,7 +29,7 @@ a:visited.overview-link.cat{cat} {{
 }}
 
 a:visited .question.cat{cat} {{
-  background: #{col};
+  background: {col};
   color: #878787;
 }} """.format(cat=i, col=color) for i, color in enumerate(colors_visited)])
     return ret
