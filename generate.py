@@ -2,6 +2,39 @@
 
 import json
 
+colors = [
+"rgba(91, 192, 235, 1)",
+"rgba(253, 231, 76, 1);",
+"rgba(155, 197, 61, 1);",
+"rgba(195, 66, 63, 1);"
+]
+colors_visited = [
+"rgba(195, 232, 247, 1);",
+"rgba(254, 246, 189, 1);",
+"rgba(218, 233, 184, 1);",
+"rgba(233, 186, 185, 1);"
+]
+
+
+def color_styles():
+    ret = "\n".join(["""
+.question.cat{cat} {{
+  background: {col};
+}} """.format(cat=i, col=color) for i, color in enumerate(colors)])
+
+    ret += "\n".join(["""
+a:visited.overview-link.cat{cat} {{
+  background: {col};
+  color: #878787;
+}}
+
+a:visited .question.cat{cat} {{
+  background: #{col};
+  color: #878787;
+}} """.format(cat=i, col=color) for i, color in enumerate(colors_visited)])
+    return ret
+
+
 with open("config.json", "r") as config:
     data = json.load(config)
 
@@ -28,7 +61,7 @@ def overview_cells(data):
             if(len(data['categories'][cat]) > qvalue):
                 ret += """
           <td class="overview-cell">
-            <a class="overview-link question" href="#q{qcat}-{qvalue}">
+            <a class="overview-link question cat{qcat}" href="#q{qcat}-{qvalue}">
               <div class="centered">
                 {qvalueprint}
               </div>
@@ -55,7 +88,7 @@ def questions(data):
                 ret += """
   <a href="#a{qcat}-{qvalue}">
     <div id="q{qcat}-{qvalue}" class="screen">
-      <div class="centered bigone question">
+      <div class="centered bigone question cat{qcat}">
           {question}
       </div>
     </div>
@@ -83,6 +116,7 @@ def answers(data):
     return ret
 
 print(base.format(
+    color_styles=color_styles(),
     overview_headings=overview_headings(data),
     overview_cells=overview_cells(data),
     questions=questions(data),
