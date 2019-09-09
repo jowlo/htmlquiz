@@ -20,12 +20,17 @@ def color_styles():
     ret = "\n".join(["""
 .question.cat{cat} {{
   background: {col};
-}} """.format(cat=i, col=color) for i, color in enumerate(colors)])
+}}
+
+.answer.cat{cat} {{
+  background: #424242;
+  color: {col};
+}}""".format(cat=i, col=color) for i, color in enumerate(colors)])
 
     ret += "\n".join(["""
 a:visited.overview-link.cat{cat} {{
-  background: {col};
-  color: #878787;
+  background: #878787;
+  color: {col};
 }}
 
 a:visited .question.cat{cat} {{
@@ -107,7 +112,7 @@ def answers(data):
                 ret += """
   <a href="#overview">
     <div id="a{qcat}-{qvalue}" class="screen">
-      <div class="centered bigone answer">
+      <div class="centered bigone answer cat{qcat}">
         {answer}
       </div>
     </div>
