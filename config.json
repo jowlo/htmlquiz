@@ -1,0 +1,34 @@
+{
+  "categories" : {
+    "Kategorie 1" : [
+      {
+        "question": "Kat 1 Frage 1",
+        "answer"  : "Kat 1 Antwort 1"
+      },
+      {
+        "question": "Kat 1 Frage 2",
+        "answer"  : "Kat 1 Antwort 2"
+      }
+    ],
+    "AKategorie 2" : [
+      {
+        "question": "Kat 2 Frage 1",
+        "answer"  : "Kat 2 Antwort 1"
+      },
+      {
+        "question": "AKat 2 Frage 2",
+        "answer"  : "Kat 2 Antwort 2"
+      }
+    ],
+    "Kategorie 3" : [
+      {
+        "question": "Kat 3 Frage 1",
+        "answer"  : "Kat 3 Antwort 1"
+      },
+      {
+        "question": "Kat 3 Frage 2",
+        "answer"  : "Kat 3 Antwort 2"
+      }
+    ]
+  }
+}

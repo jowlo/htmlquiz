@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:800&display=swap" rel="stylesheet">
+
+
+<style>
+
+html, body {{
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+}}
+
+.screen {{
+  height: 100%;
+  padding: 20px;
+}}
+
+.centered {{
+  height: 90%;
+  display : flex;
+  align-items : center;
+  justify-content: center;
+}}
+
+.bigone {{
+  font-size: 400%;
+  border-radius: 25px;
+  margin: 20px;
+}}
+
+.question {{
+  background: #34abeb;
+}}
+
+a {{
+  text-decoration: none;
+}}
+
+a:link, a:visited, a:hover, a:active {{ color:#000000; }}
+
+a:visited .question {{
+  background: #a7d3eb;
+}}
+
+.answer {{
+  background: #a92ef0;
+}}
+
+.overview {{
+  border-spacing: 1rem;
+  width: 100%;
+  height: 95%;
+  text-align:center;
+  border-radius: 25px;
+}}
+
+td .question{{
+  height:100%;
+}}
+
+.overview-link {{
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  align-items: center;
+  vertical-align: middle;
+}}
+
+.overview-cell {{
+  font-size: 300%;
+  height: 20%;
+  align-items : center;
+  justify-content: center;
+}}
+
+.overview-head {{
+  font-size: 200%;
+  height: 5%;
+  align-items : center;
+  justify-content: center;
+}}
+
+a:visited.overview-link {{
+  background: #a7d3eb;
+}}
+
+</style>
+
+<title>Quiz</title>
+</head>
+<body>
+  <!-- Overview -->
+  <div id="overview" class="screen">
+    <table class="overview">
+      <thead>
+        {overview_headings}
+      </thead>
+      <tbody>
+        {overview_cells}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Questions -->
+  {questions}
+  <!-- Answers -->
+  {answers}
+</body>
+</html>
