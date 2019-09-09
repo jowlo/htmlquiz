@@ -1,33 +1,75 @@
 {
   "categories" : {
-    "Kategorie 1" : [
+    "History" : [
       {
-        "question": "Kat 1 Frage 1",
-        "answer"  : "Kat 1 Antwort 1"
+        "question": "What was the 1st human invention that broke the sound barrier?",
+        "answer"  : "The whip"
       },
       {
-        "question": "Kat 1 Frage 2",
-        "answer"  : "Kat 1 Antwort 2"
+        "question": "What was the third last state to join the USA?",
+        "answer"  : "Arizona"
+      },
+      {
+        "question": "Who was Queen for just nine days in 1553?",
+        "answer"  : "Lady Jane Grey"
+      },
+      {
+        "question": "In which British city did the Peterloo massacre take place in 1819?",
+        "answer"  : "Manchester"
       }
     ],
-    "AKategorie 2" : [
+    "Music" : [
       {
-        "question": "Kat 2 Frage 1",
-        "answer"  : "Kat 2 Antwort 1"
+        "question": "Which famous group performed the first ever song on Top Of The Pops in 1964?",
+        "answer"  : "The Rolling Stones"
       },
       {
-        "question": "AKat 2 Frage 2",
-        "answer"  : "Kat 2 Antwort 2"
+        "question": "Which Beatle led the way across the zebra crossing on the Abbey Road album cover?",
+        "answer"  : "John Lennon"
+      },
+      {
+        "question": "Who wrote the Sinead O`Connor hit Nothing Compares 2 U?",
+        "answer"  : "Prince"
+      },
+      {
+        "question": "What nationality was Mozart?",
+        "answer"  : "Austrian"
       }
     ],
-    "Kategorie 3" : [
+    "Science and Nature" : [
       {
-        "question": "Kat 3 Frage 1",
-        "answer"  : "Kat 3 Antwort 1"
+        "question": "The scientific unit LUMEN is used in the measurement of what?",
+        "answer"  : "Light"
       },
       {
-        "question": "Kat 3 Frage 2",
-        "answer"  : "Kat 3 Antwort 2"
+        "question": "How many wings does a bee have?",
+        "answer"  : "Four"
+      },
+      {
+        "question": "What is the common name for the medical condition epistaxis?",
+        "answer"  : "Nose bleed"
+      },
+      {
+        "question": "What mineral has the lowest number on the Mohs scale?",
+        "answer"  : "Talc"
+      }
+    ],
+    "Geography" : [
+      {
+        "question": "What is the capital of India?",
+        "answer"  : "New Delhi"
+      },
+      {
+        "question": "What is the largest fresh water lake in North America?",
+        "answer"  : "Lake Superior"
+      },
+      {
+        "question": "How many emirates make up the United Arab Emirates?",
+        "answer"  : "Seven"
+      },
+      {
+        "question": "What is the only national capital that borders two different countries?",
+        "answer"  : "Bratislava"
       }
     ]
   }
