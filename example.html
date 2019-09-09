@@ -23,6 +23,7 @@ html, body {
   display : flex;
   align-items : center;
   justify-content: center;
+  text-align: center;
 }
 
 .bigone {
@@ -47,6 +48,11 @@ a:visited .question {
 
 .answer {
   background: #a92ef0;
+}
+
+.reset {
+  background: #000000;
+  color: #ff0000;
 }
 
 .overview {
@@ -173,9 +179,10 @@ a:visited .question.cat3 {
   <div id="overview" class="screen">
     <table class="overview">
       <thead>
-        <td class=overview-head>AKategorie 2</td>
-<td class=overview-head>Kategorie 1</td>
-<td class=overview-head>Kategorie 3</td>
+        <td class=overview-head>Geography</td>
+<td class=overview-head>History</td>
+<td class=overview-head>Music</td>
+<td class=overview-head>Science and Nature</td>
       </thead>
       <tbody>
         
@@ -196,6 +203,13 @@ a:visited .question.cat3 {
           </td>
           <td class="overview-cell">
             <a class="overview-link question cat2" href="#q2-1">
+              <div class="centered">
+                100
+              </div>
+            </a>
+          </td>
+          <td class="overview-cell">
+            <a class="overview-link question cat3" href="#q3-1">
               <div class="centered">
                 100
               </div>
@@ -224,6 +238,73 @@ a:visited .question.cat3 {
               </div>
             </a>
           </td>
+          <td class="overview-cell">
+            <a class="overview-link question cat3" href="#q3-2">
+              <div class="centered">
+                200
+              </div>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="overview-cell">
+            <a class="overview-link question cat0" href="#q0-3">
+              <div class="centered">
+                300
+              </div>
+            </a>
+          </td>
+          <td class="overview-cell">
+            <a class="overview-link question cat1" href="#q1-3">
+              <div class="centered">
+                300
+              </div>
+            </a>
+          </td>
+          <td class="overview-cell">
+            <a class="overview-link question cat2" href="#q2-3">
+              <div class="centered">
+                300
+              </div>
+            </a>
+          </td>
+          <td class="overview-cell">
+            <a class="overview-link question cat3" href="#q3-3">
+              <div class="centered">
+                300
+              </div>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="overview-cell">
+            <a class="overview-link question cat0" href="#q0-4">
+              <div class="centered">
+                400
+              </div>
+            </a>
+          </td>
+          <td class="overview-cell">
+            <a class="overview-link question cat1" href="#q1-4">
+              <div class="centered">
+                400
+              </div>
+            </a>
+          </td>
+          <td class="overview-cell">
+            <a class="overview-link question cat2" href="#q2-4">
+              <div class="centered">
+                400
+              </div>
+            </a>
+          </td>
+          <td class="overview-cell">
+            <a class="overview-link question cat3" href="#q3-4">
+              <div class="centered">
+                400
+              </div>
+            </a>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -234,42 +315,112 @@ a:visited .question.cat3 {
   <a href="#a0-1">
     <div id="q0-1" class="screen">
       <div class="centered bigone question cat0">
-          Kat 2 Frage 1
+          What is the capital of India?
       </div>
     </div>
   </a>
   <a href="#a1-1">
     <div id="q1-1" class="screen">
       <div class="centered bigone question cat1">
-          Kat 1 Frage 1
+          What was the 1st human invention that broke the sound barrier?
       </div>
     </div>
   </a>
   <a href="#a2-1">
     <div id="q2-1" class="screen">
       <div class="centered bigone question cat2">
-          Kat 3 Frage 1
+          Which famous group performed the first ever song on Top Of The Pops in 1964?
+      </div>
+    </div>
+  </a>
+  <a href="#a3-1">
+    <div id="q3-1" class="screen">
+      <div class="centered bigone question cat3">
+          The scientific unit LUMEN is used in the measurement of what?
       </div>
     </div>
   </a>
   <a href="#a0-2">
     <div id="q0-2" class="screen">
       <div class="centered bigone question cat0">
-          AKat 2 Frage 2
+          What is the largest fresh water lake in North America?
       </div>
     </div>
   </a>
   <a href="#a1-2">
     <div id="q1-2" class="screen">
       <div class="centered bigone question cat1">
-          Kat 1 Frage 2
+          What was the third last state to join the USA?
       </div>
     </div>
   </a>
   <a href="#a2-2">
     <div id="q2-2" class="screen">
       <div class="centered bigone question cat2">
-          Kat 3 Frage 2
+          Which Beatle led the way across the zebra crossing on the Abbey Road album cover?
+      </div>
+    </div>
+  </a>
+  <a href="#a3-2">
+    <div id="q3-2" class="screen">
+      <div class="centered bigone question cat3">
+          How many wings does a bee have?
+      </div>
+    </div>
+  </a>
+  <a href="#a0-3">
+    <div id="q0-3" class="screen">
+      <div class="centered bigone question cat0">
+          How many emirates make up the United Arab Emirates?
+      </div>
+    </div>
+  </a>
+  <a href="#a1-3">
+    <div id="q1-3" class="screen">
+      <div class="centered bigone question cat1">
+          Who was Queen for just nine days in 1553?
+      </div>
+    </div>
+  </a>
+  <a href="#a2-3">
+    <div id="q2-3" class="screen">
+      <div class="centered bigone question cat2">
+          Who wrote the Sinead O`Connor hit Nothing Compares 2 U?
+      </div>
+    </div>
+  </a>
+  <a href="#a3-3">
+    <div id="q3-3" class="screen">
+      <div class="centered bigone question cat3">
+          What is the common name for the medical condition epistaxis?
+      </div>
+    </div>
+  </a>
+  <a href="#a0-4">
+    <div id="q0-4" class="screen">
+      <div class="centered bigone question cat0">
+          What is the only national capital that borders two different countries?
+      </div>
+    </div>
+  </a>
+  <a href="#a1-4">
+    <div id="q1-4" class="screen">
+      <div class="centered bigone question cat1">
+          In which British city did the Peterloo massacre take place in 1819?
+      </div>
+    </div>
+  </a>
+  <a href="#a2-4">
+    <div id="q2-4" class="screen">
+      <div class="centered bigone question cat2">
+          What nationality was Mozart?
+      </div>
+    </div>
+  </a>
+  <a href="#a3-4">
+    <div id="q3-4" class="screen">
+      <div class="centered bigone question cat3">
+          What mineral has the lowest number on the Mohs scale?
       </div>
     </div>
   </a>
@@ -278,45 +429,125 @@ a:visited .question.cat3 {
   <a href="#overview">
     <div id="a0-1" class="screen">
       <div class="centered bigone answer cat0">
-        Kat 2 Antwort 1
+        New Delhi
       </div>
     </div>
   </a>
   <a href="#overview">
     <div id="a1-1" class="screen">
       <div class="centered bigone answer cat1">
-        Kat 1 Antwort 1
+        The whip
       </div>
     </div>
   </a>
   <a href="#overview">
     <div id="a2-1" class="screen">
       <div class="centered bigone answer cat2">
-        Kat 3 Antwort 1
+        The Rolling Stones
+      </div>
+    </div>
+  </a>
+  <a href="#overview">
+    <div id="a3-1" class="screen">
+      <div class="centered bigone answer cat3">
+        Light
       </div>
     </div>
   </a>
   <a href="#overview">
     <div id="a0-2" class="screen">
       <div class="centered bigone answer cat0">
-        Kat 2 Antwort 2
+        Lake Superior
       </div>
     </div>
   </a>
   <a href="#overview">
     <div id="a1-2" class="screen">
       <div class="centered bigone answer cat1">
-        Kat 1 Antwort 2
+        Arizona
       </div>
     </div>
   </a>
   <a href="#overview">
     <div id="a2-2" class="screen">
       <div class="centered bigone answer cat2">
-        Kat 3 Antwort 2
+        John Lennon
       </div>
     </div>
   </a>
+  <a href="#overview">
+    <div id="a3-2" class="screen">
+      <div class="centered bigone answer cat3">
+        Four
+      </div>
+    </div>
+  </a>
+  <a href="#overview">
+    <div id="a0-3" class="screen">
+      <div class="centered bigone answer cat0">
+        Seven
+      </div>
+    </div>
+  </a>
+  <a href="#overview">
+    <div id="a1-3" class="screen">
+      <div class="centered bigone answer cat1">
+        Lady Jane Grey
+      </div>
+    </div>
+  </a>
+  <a href="#overview">
+    <div id="a2-3" class="screen">
+      <div class="centered bigone answer cat2">
+        Prince
+      </div>
+    </div>
+  </a>
+  <a href="#overview">
+    <div id="a3-3" class="screen">
+      <div class="centered bigone answer cat3">
+        Nose bleed
+      </div>
+    </div>
+  </a>
+  <a href="#overview">
+    <div id="a0-4" class="screen">
+      <div class="centered bigone answer cat0">
+        Bratislava
+      </div>
+    </div>
+  </a>
+  <a href="#overview">
+    <div id="a1-4" class="screen">
+      <div class="centered bigone answer cat1">
+        Manchester
+      </div>
+    </div>
+  </a>
+  <a href="#overview">
+    <div id="a2-4" class="screen">
+      <div class="centered bigone answer cat2">
+        Austrian
+      </div>
+    </div>
+  </a>
+  <a href="#overview">
+    <div id="a3-4" class="screen">
+      <div class="centered bigone answer cat3">
+        Talc
+      </div>
+    </div>
+  </a>
+
+  <!-- Reset -->
+  <a href="javascript:window.open(location.protocol + '//' + location.host+location.pathname + '?' + Math.random().toString(36).substring(7))">
+    <div id="reset" class="screen">
+      <div class="centered bigone reset">
+        RESET
+      </div>
+    </div>
+  </a>
+
 </body>
 </html>
 

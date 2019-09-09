@@ -50,6 +50,11 @@ a:visited .question {{
   background: #a92ef0;
 }}
 
+.reset {{
+  background: #000000;
+  color: #ff0000;
+}}
+
 .overview {{
   border-spacing: 1rem;
   width: 100%;
@@ -112,5 +117,15 @@ a:visited.overview-link {{
   {questions}
   <!-- Answers -->
   {answers}
+
+  <!-- Reset -->
+  <a href="javascript:window.open(location.protocol + '//' + location.host+location.pathname + '?' + Math.random().toString(36).substring(7))">
+    <div id="reset" class="screen">
+      <div class="centered bigone reset">
+        RESET
+      </div>
+    </div>
+  </a>
+
 </body>
 </html>
