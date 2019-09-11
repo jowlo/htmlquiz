@@ -67,9 +67,10 @@ def overview_cells(data):
                 ret += """
           <td class="overview-cell">
             <a class="overview-link question cat{qcat}" href="#q{qcat}-{qvalue}">
-              <div class="centered">
+              <div class="overview-centered">
                 {qvalueprint}
               </div>
+              <span class="status right" id="q{qcat}-{qvalue}-right">✔</span><span class="status wrong" id="q{qcat}-{qvalue}-wrong">⨯</span>
             </a>
           </td>""".format(qcat=qcat, qvalue=qvalue+1, qvalueprint=(qvalue+1)*100)
             else:
@@ -112,8 +113,12 @@ def answers(data):
                 ret += """
   <a href="#overview">
     <div id="a{qcat}-{qvalue}" class="screen">
-      <div class="centered bigone answer cat{qcat}">
-        {answer}
+      <div class="bigone answer cat{qcat}">
+        <div class="centered">{answer}</div>
+        <div>
+          <div class="status right" onclick="document.getElementById('q{qcat}-{qvalue}-right').style.display = 'block';">✔</div>
+          <div class="status wrong" onclick="document.getElementById('q{qcat}-{qvalue}-wrong').style.display = 'block';">⨯</div>
+        </div>
       </div>
     </div>
   </a>""".format(answer=data['categories'][cat][qvalue]['answer'], qvalue=qvalue+1,

@@ -24,12 +24,14 @@ html, body {
   align-items : center;
   justify-content: center;
   text-align: center;
+  padding:0em 1em;
 }
 
 .bigone {
   font-size: 400%;
   border-radius: 25px;
   margin: 20px;
+  height: 90%;
 }
 
 .question {
@@ -50,6 +52,20 @@ a:visited .question {
   background: #a92ef0;
 }
 
+.answer .status {
+  display: inline;
+  padding: 2% 5%;
+  margin-top: -4%;
+}
+
+.answer .status.right {
+  float: left;
+}
+
+.answer .status.wrong {
+  float: right;
+}
+
 table {
   table-layout: fixed;
   width: 100%;
@@ -68,7 +84,16 @@ table {
   border-radius: 25px;
 }
 
-td .question{
+.overview-centered {
+  height: 60%;
+  display : flex;
+  align-items : flex-end;
+  justify-content: center;
+  padding:0em 1em;
+}
+
+
+td .question {
   height:100%;
 }
 
@@ -79,6 +104,18 @@ td .question{
   border-radius: 25px;
   align-items: center;
   vertical-align: middle;
+}
+
+.overview-link .status {
+  display: none;
+}
+
+.status.right{
+  color: green;
+}
+
+.status.wrong{
+  color: red;
 }
 
 .overview-cell {
@@ -194,120 +231,136 @@ a:visited .question.cat3 {
         <tr>
           <td class="overview-cell">
             <a class="overview-link question cat0" href="#q0-1">
-              <div class="centered">
+              <div class="overview-centered">
                 100
               </div>
+              <span class="status right" id="q0-1-right">✔</span><span class="status wrong" id="q0-1-wrong">⨯</span>
             </a>
           </td>
           <td class="overview-cell">
             <a class="overview-link question cat1" href="#q1-1">
-              <div class="centered">
+              <div class="overview-centered">
                 100
               </div>
+              <span class="status right" id="q1-1-right">✔</span><span class="status wrong" id="q1-1-wrong">⨯</span>
             </a>
           </td>
           <td class="overview-cell">
             <a class="overview-link question cat2" href="#q2-1">
-              <div class="centered">
+              <div class="overview-centered">
                 100
               </div>
+              <span class="status right" id="q2-1-right">✔</span><span class="status wrong" id="q2-1-wrong">⨯</span>
             </a>
           </td>
           <td class="overview-cell">
             <a class="overview-link question cat3" href="#q3-1">
-              <div class="centered">
+              <div class="overview-centered">
                 100
               </div>
+              <span class="status right" id="q3-1-right">✔</span><span class="status wrong" id="q3-1-wrong">⨯</span>
             </a>
           </td>
         </tr>
         <tr>
           <td class="overview-cell">
             <a class="overview-link question cat0" href="#q0-2">
-              <div class="centered">
+              <div class="overview-centered">
                 200
               </div>
+              <span class="status right" id="q0-2-right">✔</span><span class="status wrong" id="q0-2-wrong">⨯</span>
             </a>
           </td>
           <td class="overview-cell">
             <a class="overview-link question cat1" href="#q1-2">
-              <div class="centered">
+              <div class="overview-centered">
                 200
               </div>
+              <span class="status right" id="q1-2-right">✔</span><span class="status wrong" id="q1-2-wrong">⨯</span>
             </a>
           </td>
           <td class="overview-cell">
             <a class="overview-link question cat2" href="#q2-2">
-              <div class="centered">
+              <div class="overview-centered">
                 200
               </div>
+              <span class="status right" id="q2-2-right">✔</span><span class="status wrong" id="q2-2-wrong">⨯</span>
             </a>
           </td>
           <td class="overview-cell">
             <a class="overview-link question cat3" href="#q3-2">
-              <div class="centered">
+              <div class="overview-centered">
                 200
               </div>
+              <span class="status right" id="q3-2-right">✔</span><span class="status wrong" id="q3-2-wrong">⨯</span>
             </a>
           </td>
         </tr>
         <tr>
           <td class="overview-cell">
             <a class="overview-link question cat0" href="#q0-3">
-              <div class="centered">
+              <div class="overview-centered">
                 300
               </div>
+              <span class="status right" id="q0-3-right">✔</span><span class="status wrong" id="q0-3-wrong">⨯</span>
             </a>
           </td>
           <td class="overview-cell">
             <a class="overview-link question cat1" href="#q1-3">
-              <div class="centered">
+              <div class="overview-centered">
                 300
               </div>
+              <span class="status right" id="q1-3-right">✔</span><span class="status wrong" id="q1-3-wrong">⨯</span>
             </a>
           </td>
           <td class="overview-cell">
             <a class="overview-link question cat2" href="#q2-3">
-              <div class="centered">
+              <div class="overview-centered">
                 300
               </div>
+              <span class="status right" id="q2-3-right">✔</span><span class="status wrong" id="q2-3-wrong">⨯</span>
             </a>
           </td>
           <td class="overview-cell">
             <a class="overview-link question cat3" href="#q3-3">
-              <div class="centered">
+              <div class="overview-centered">
                 300
               </div>
+              <span class="status right" id="q3-3-right">✔</span><span class="status wrong" id="q3-3-wrong">⨯</span>
             </a>
           </td>
         </tr>
         <tr>
           <td class="overview-cell">
             <a class="overview-link question cat0" href="#q0-4">
-              <div class="centered">
+              <div class="overview-centered">
                 400
               </div>
+              <span class="status right" id="q0-4-right">✔</span><span class="status wrong" id="q0-4-wrong">⨯</span>
             </a>
           </td>
           <td class="overview-cell">
             <a class="overview-link question cat1" href="#q1-4">
-              <div class="centered">
+              <div class="overview-centered">
                 400
               </div>
+              <span class="status right" id="q1-4-right">✔</span><span class="status wrong" id="q1-4-wrong">⨯</span>
             </a>
           </td>
           <td class="overview-cell">
             <a class="overview-link question cat2" href="#q2-4">
-              <div class="centered">
+              <div class="overview-centered">
                 400
               </div>
+              <span class="status right" id="q2-4-right">✔</span><span class="status wrong" id="q2-4-wrong">⨯</span>
             </a>
           </td>
           <td class="overview-cell">
             <a class="overview-link question cat3" href="#q3-4">
-              <div class="centered">
+              <div class="overview-centered">
                 400
               </div>
+              <span class="status right" id="q3-4-right">✔</span><span class="status wrong" id="q3-4-wrong">⨯</span>
             </a>
           </td>
         </tr>
@@ -433,113 +486,177 @@ a:visited .question.cat3 {
   
   <a href="#overview">
     <div id="a0-1" class="screen">
-      <div class="centered bigone answer cat0">
-        New Delhi
+      <div class="bigone answer cat0">
+        <div class="centered">New Delhi</div>
+        <div>
+          <div class="status right" onclick="document.getElementById('q0-1-right').style.display = 'block';">✔</div>
+          <div class="status wrong" onclick="document.getElementById('q0-1-wrong').style.display = 'block';">⨯</div>
+        </div>
       </div>
     </div>
   </a>
   <a href="#overview">
     <div id="a1-1" class="screen">
-      <div class="centered bigone answer cat1">
-        The whip
+      <div class="bigone answer cat1">
+        <div class="centered">The whip</div>
+        <div>
+          <div class="status right" onclick="document.getElementById('q1-1-right').style.display = 'block';">✔</div>
+          <div class="status wrong" onclick="document.getElementById('q1-1-wrong').style.display = 'block';">⨯</div>
+        </div>
       </div>
     </div>
   </a>
   <a href="#overview">
     <div id="a2-1" class="screen">
-      <div class="centered bigone answer cat2">
-        The Rolling Stones
+      <div class="bigone answer cat2">
+        <div class="centered">The Rolling Stones</div>
+        <div>
+          <div class="status right" onclick="document.getElementById('q2-1-right').style.display = 'block';">✔</div>
+          <div class="status wrong" onclick="document.getElementById('q2-1-wrong').style.display = 'block';">⨯</div>
+        </div>
       </div>
     </div>
   </a>
   <a href="#overview">
     <div id="a3-1" class="screen">
-      <div class="centered bigone answer cat3">
-        Light
+      <div class="bigone answer cat3">
+        <div class="centered">Light</div>
+        <div>
+          <div class="status right" onclick="document.getElementById('q3-1-right').style.display = 'block';">✔</div>
+          <div class="status wrong" onclick="document.getElementById('q3-1-wrong').style.display = 'block';">⨯</div>
+        </div>
       </div>
     </div>
   </a>
   <a href="#overview">
     <div id="a0-2" class="screen">
-      <div class="centered bigone answer cat0">
-        Lake Superior
+      <div class="bigone answer cat0">
+        <div class="centered">Lake Superior</div>
+        <div>
+          <div class="status right" onclick="document.getElementById('q0-2-right').style.display = 'block';">✔</div>
+          <div class="status wrong" onclick="document.getElementById('q0-2-wrong').style.display = 'block';">⨯</div>
+        </div>
       </div>
     </div>
   </a>
   <a href="#overview">
     <div id="a1-2" class="screen">
-      <div class="centered bigone answer cat1">
-        Arizona
+      <div class="bigone answer cat1">
+        <div class="centered">Arizona</div>
+        <div>
+          <div class="status right" onclick="document.getElementById('q1-2-right').style.display = 'block';">✔</div>
+          <div class="status wrong" onclick="document.getElementById('q1-2-wrong').style.display = 'block';">⨯</div>
+        </div>
       </div>
     </div>
   </a>
   <a href="#overview">
     <div id="a2-2" class="screen">
-      <div class="centered bigone answer cat2">
-        John Lennon
+      <div class="bigone answer cat2">
+        <div class="centered">John Lennon</div>
+        <div>
+          <div class="status right" onclick="document.getElementById('q2-2-right').style.display = 'block';">✔</div>
+          <div class="status wrong" onclick="document.getElementById('q2-2-wrong').style.display = 'block';">⨯</div>
+        </div>
       </div>
     </div>
   </a>
   <a href="#overview">
     <div id="a3-2" class="screen">
-      <div class="centered bigone answer cat3">
-        Four
+      <div class="bigone answer cat3">
+        <div class="centered">Four</div>
+        <div>
+          <div class="status right" onclick="document.getElementById('q3-2-right').style.display = 'block';">✔</div>
+          <div class="status wrong" onclick="document.getElementById('q3-2-wrong').style.display = 'block';">⨯</div>
+        </div>
       </div>
     </div>
   </a>
   <a href="#overview">
     <div id="a0-3" class="screen">
-      <div class="centered bigone answer cat0">
-        Seven
+      <div class="bigone answer cat0">
+        <div class="centered">Seven</div>
+        <div>
+          <div class="status right" onclick="document.getElementById('q0-3-right').style.display = 'block';">✔</div>
+          <div class="status wrong" onclick="document.getElementById('q0-3-wrong').style.display = 'block';">⨯</div>
+        </div>
       </div>
     </div>
   </a>
   <a href="#overview">
     <div id="a1-3" class="screen">
-      <div class="centered bigone answer cat1">
-        Lady Jane Grey
+      <div class="bigone answer cat1">
+        <div class="centered">Lady Jane Grey</div>
+        <div>
+          <div class="status right" onclick="document.getElementById('q1-3-right').style.display = 'block';">✔</div>
+          <div class="status wrong" onclick="document.getElementById('q1-3-wrong').style.display = 'block';">⨯</div>
+        </div>
       </div>
     </div>
   </a>
   <a href="#overview">
     <div id="a2-3" class="screen">
-      <div class="centered bigone answer cat2">
-        Prince
+      <div class="bigone answer cat2">
+        <div class="centered">Prince</div>
+        <div>
+          <div class="status right" onclick="document.getElementById('q2-3-right').style.display = 'block';">✔</div>
+          <div class="status wrong" onclick="document.getElementById('q2-3-wrong').style.display = 'block';">⨯</div>
+        </div>
       </div>
     </div>
   </a>
   <a href="#overview">
     <div id="a3-3" class="screen">
-      <div class="centered bigone answer cat3">
-        Nose bleed
+      <div class="bigone answer cat3">
+        <div class="centered">Nose bleed</div>
+        <div>
+          <div class="status right" onclick="document.getElementById('q3-3-right').style.display = 'block';">✔</div>
+          <div class="status wrong" onclick="document.getElementById('q3-3-wrong').style.display = 'block';">⨯</div>
+        </div>
       </div>
     </div>
   </a>
   <a href="#overview">
     <div id="a0-4" class="screen">
-      <div class="centered bigone answer cat0">
-        Bratislava
+      <div class="bigone answer cat0">
+        <div class="centered">Bratislava</div>
+        <div>
+          <div class="status right" onclick="document.getElementById('q0-4-right').style.display = 'block';">✔</div>
+          <div class="status wrong" onclick="document.getElementById('q0-4-wrong').style.display = 'block';">⨯</div>
+        </div>
       </div>
     </div>
   </a>
   <a href="#overview">
     <div id="a1-4" class="screen">
-      <div class="centered bigone answer cat1">
-        Manchester
+      <div class="bigone answer cat1">
+        <div class="centered">Manchester</div>
+        <div>
+          <div class="status right" onclick="document.getElementById('q1-4-right').style.display = 'block';">✔</div>
+          <div class="status wrong" onclick="document.getElementById('q1-4-wrong').style.display = 'block';">⨯</div>
+        </div>
       </div>
     </div>
   </a>
   <a href="#overview">
     <div id="a2-4" class="screen">
-      <div class="centered bigone answer cat2">
-        Austrian
+      <div class="bigone answer cat2">
+        <div class="centered">Austrian</div>
+        <div>
+          <div class="status right" onclick="document.getElementById('q2-4-right').style.display = 'block';">✔</div>
+          <div class="status wrong" onclick="document.getElementById('q2-4-wrong').style.display = 'block';">⨯</div>
+        </div>
       </div>
     </div>
   </a>
   <a href="#overview">
     <div id="a3-4" class="screen">
-      <div class="centered bigone answer cat3">
-        Talc
+      <div class="bigone answer cat3">
+        <div class="centered">Talc</div>
+        <div>
+          <div class="status right" onclick="document.getElementById('q3-4-right').style.display = 'block';">✔</div>
+          <div class="status wrong" onclick="document.getElementById('q3-4-wrong').style.display = 'block';">⨯</div>
+        </div>
       </div>
     </div>
   </a>
